@@ -9,10 +9,43 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <nav>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-white shadow">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-indigo-500 text-white rounded-lg w-6 h-6 flex items-center justify-center text-sm font-bold">
+                    <i data-lucide="sun" class="w-4 h-4"></i>
+                </div>
+                <span class="font-bold text-lg">WeatherPro</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <input type="text" placeholder="Rechercher une ville..." class="border px-3 py-1 rounded-md focus:outline-none" />
+                <i data-lucide="settings" class="w-6 h-6"></i>
+            </div>
+        </div>
     </nav>
-    <main>
+    <main class="my-8">
+        <header class="bg-gradient-to-r from-indigo-500 to-purple-500 max-w-6xl mx-auto text-white p-6 rounded-xl relative">
+            <div class="flex justify-between items-center relative z-1">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-2xl font-semibold">Paris, France</h1>
+                    <p class="text-sm">Mercredi, 16 Décembre 2024</p>
+                    <div class="flex gap-4 items-center">
+                        <p class="text-5xl font-light">22°</p>
+                        <div>
+                            <p class="text-sm font-semibold">Ensoleillé</p>
+                            <p class="text-sm">Ressenti 25°</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end">
+                    <i data-lucide="sun" class="w-16 h-16 mb-2 fill-yellow-300 stroke-yellow-300"></i>
+                    <p class="text-sm">Max: 26°<br>Min: 18°</p>
+                </div>
+            </div>
+            <div class="absolute -bottom-6 -left-6 w-20 h-20 rounded-full bg-gray-100 opacity-50"></div>
+            <div class="absolute -top-14 -right-14 w-35 h-35 rounded-full bg-gray-100 opacity-50"></div>
+        </header>
     </main>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
