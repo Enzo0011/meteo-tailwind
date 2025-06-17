@@ -19,7 +19,10 @@
                 <span class="font-bold text-lg">WeatherPro</span>
             </div>
             <div class="flex items-center gap-4">
-                <input type="text" placeholder="Rechercher une ville..." class="border px-3 py-1 rounded-md focus:outline-none" />
+                <div class="flex items-center border px-2 py-1 rounded-md focus-within:ring-2 focus-within:ring-blue-500 gap-2">
+                    <i data-lucide="search" class="w-4 h-4 text-gray-600"></i>
+                    <input type="text" placeholder="Rechercher une ville..." class="outline-none w-full bg-transparent" />
+                </div>
                 <i data-lucide="settings" class="w-6 h-6"></i>
             </div>
         </div>
